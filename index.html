@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .animation-itself{
+        position:absolute;
+        top: 10px;
+        width: 100%;
+        height: 100vh;
+        background: url(images/city.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .bird{
+        position:absolute;
+        width: 100px;
+        height: 69px;
+        top: 5%;
+        left: 5%;
+        background: url(images/bird2.png);
+        animation: birdAnimate 1s steps(4)
+        infinite 4s,
+                    birdMove 5s linear infinite 4s; 
+    }
+    @keyframes birdAnimate{
+        0%{
+            background-position-x: 0;
+
+        }
+        100%{
+            background-position: 400px;
+
+        }
+    }
+
+    @keyframes birdMove{
+        0%{
+            left: 0%;
+            top: 5%;
+        }
+        100%{
+            left: 100%;
+            top: 5%;
+        }
+    }
+    /*.car1{
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 30%;
+        background: url(images/car1.png);
+
+    }
+    .car2{
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 150px;
+        background: url(images/car2.png);
+        right: 7px;
+    }
+    .car3{
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 230px;
+        background: url(images/car3.png);
+        right: 45px;
+    }
+    .car4{
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 150px;
+        background: url(images/car4.png);
+        right: 700px;
+    }
+    .boy{
+
+    }
+    .girl{
+        
+    }*/
+</style>
+</head>
+<body>
+<div class="animation-itself">
+    <div class="bird"></div>
+    <div class="car1"></div>
+    <div class="car2"></div>
+    <div class="car3"></div>
+    <div class="car4"></div>
+    <div class="boy"></div>
+    <div class="girl"></div>
+</div>
+</body>
+</html>
